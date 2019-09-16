@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 
-export default function CharacterList() {
+export default function CharacterList(props) {
   const CustomDiv = styled.div`
     border: 1px solid black;
     margin: 10px;
@@ -11,7 +11,8 @@ export default function CharacterList() {
   `
   const [character, setCharacter] = useState([]);
   useEffect(() => {
-    axios.get("https://rickandmortyapi.com/api/character/")
+
+    axios.get(`https://rickandmortyapi.com/api/character/`)
       .then((res) => {
         setCharacter(res.data.results)
         console.log(res.data.results)

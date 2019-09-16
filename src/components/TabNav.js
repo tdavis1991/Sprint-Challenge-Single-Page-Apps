@@ -1,6 +1,7 @@
 import React from "react";
 import { Tab, Menu, Icon } from "semantic-ui-react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
+import styled from "styled-components";
 
 // TODO: Add missing menu/tabs/nav below
 
@@ -12,4 +13,20 @@ import { NavLink } from "react-router-dom";
 
 export default function TabNav() {
 
+    return (
+        <div className="nav-container">
+            <Link style={{margin: "30px", fontSize: "2rem"}} to="/">
+                Home
+            </Link>
+            <Link style={{margin: "30px", fontSize: "2rem"}} to="/characters">
+                Characters
+            </Link>
+            <Link style={{margin: "30px", fontSize: "2rem"}} to="/location">
+                Locations
+            </Link>
+            <Link style={{margin: "30px", fontSize: "2rem"}} to="/episodes">
+                Episodes
+            </Link>
+        </div>
+    )
 };

@@ -44,3 +44,7 @@ header h1 {
   margin: 0 auto;
   width: 70%;
 }
+.nav-container {
+  margin: 10px auto;
+  text-align: center;
+}

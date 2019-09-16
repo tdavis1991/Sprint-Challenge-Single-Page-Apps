@@ -4,11 +4,11 @@ import axios from "axios";
 
 export default function LocationsList() {
     const CustomDiv = styled.div`
-    border: 1px solid black;
-    margin: 10px;
-    width: 45%;
-    padding: 5px;
-  `
+        border: 1px solid black;
+        margin: 10px;
+        width: 45%;
+        padding: 5px;
+    `
     const [location, setLocation] = useState([]);
 
     useEffect(() => {
@@ -27,6 +27,7 @@ export default function LocationsList() {
                 <h3>{list.name}</h3>
                 <p>{list.type}</p>
                 <p>{list.dimension}</p>
+                <p>{list.residents.length}</p>
             </CustomDiv>
         )
     })
