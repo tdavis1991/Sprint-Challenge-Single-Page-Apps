@@ -37,3 +37,14 @@ main {
 header h1 {
   text-align: center;
 }
+
+.character-container {
+  display: flex;
+  flex-flow: wrap;
+  margin: 0 auto;
+  width: 70%;
+}
+.nav-container {
+  margin: 10px auto;
+  text-align: center;
+}
